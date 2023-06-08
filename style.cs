@@ -1,13 +1,23 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    padding: 20px;
-    color: #333;
+  font-family: sans-serif;
 }
 
-#weatherWarnings {
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
+#weather-warnings {
+  margin: 0 auto;
+  width: 500px;
 }
+
+.warning {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.warning h2 {
+  margin: 0;
+}
+
+.warning p {
+  margin: 0;
+}
+
 
