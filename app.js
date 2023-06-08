@@ -1,6 +1,6 @@
 function getWeatherWarnings() {
     // Get the RSS feed data.
-    var rssFeedData = fetch("http://www.bom.gov.au/wa/forecasts/perth.shtml").then(response => response.text());
+    var rssFeedData = fetch("http://www.bom.gov.au/fwo/IDZ00060.warnings_wa.xml").then(response => response.text());
   
     // Parse the RSS feed data into an object.
     var weatherWarnings = rssFeedData.parseXML();
@@ -21,4 +21,5 @@ function getWeatherWarnings() {
   }
   
   window.onload = getWeatherWarnings;
+  
   
